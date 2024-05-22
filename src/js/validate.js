@@ -14,15 +14,15 @@ const schema = Yup.object().shape({
     .min(3, 'min 3 later')
     .max(40, 'max 40 later')
     .matches(/^[A-Za-z]+$/, 'only later')
-    .required('required'),
+    .required('required name'),
   userLastName: Yup.string()
     .min(3, 'min 3 later')
     .max(40, 'max 40 later')
     .matches(/^[A-Za-z]+$/, 'only later')
-    .required('required'),
+    .required('required last name'),
   phone: Yup.string()
     .matches(/^\d{7,10}$/, 'min 7 max 10 numbers')
-    .required('required'),
+    .required('required phone'),
   email: Yup.string().email('error format email').required('required'),
   checkbox: Yup.bool()
     .oneOf([true], 'Checkbox must be checked')
@@ -41,7 +41,7 @@ const validateFnc = (field, value) => {
   if (value === '') {
     iziToast.error({
       title: 'error',
-      message: 'required',
+      message: 'required input field',
       position: 'topCenter',
     });
   } else {

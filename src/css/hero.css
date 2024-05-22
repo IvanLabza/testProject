@@ -25,3 +25,14 @@
   margin: 0 auto;
   text-align: center;
 }
+
+@media screen and (max-width: 831px) {
+  .hero-text {
+    font-size: 34px;
+  }
+
+  .hero::after {
+    top: 360px;
+    left: -9px;
+  }
+}

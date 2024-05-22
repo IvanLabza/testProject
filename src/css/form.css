@@ -109,6 +109,7 @@
 }
 .phone {
   position: relative;
+  max-width: 300px;
 }
 .form-register-phone {
   display: flex;
@@ -208,3 +209,40 @@
     gap: 30px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .form-content-text{
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 428px) {
+  .input-phone{
+    max-width: 62%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .input-phone{
+    max-width: 60%;
+  }
+}
+
+
+@media screen and (max-width: 383px) {
+  .input-phone{
+    max-width: 58%;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  .input-phone{
+    max-width: 56.5%;
+  }
+}
+
