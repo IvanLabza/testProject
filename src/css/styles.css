@@ -5,8 +5,71 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./form.css');
 
+@font-face {
+  font-family: Indira;
+  src: url(../fonts/Indira_K.ttf);
+}
 
+body {
+  background-color: rgb(38, 23, 16);
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1920px;
+  height: 877px;
+  filter: blur(500px);
+  background: linear-gradient(
+    135.86deg,
+    rgb(49, 18, 0) 1.224%,
+    rgba(220, 100, 30, 0) 100%
+  );
+  opacity: 0.9;
+  top: 0;
+  right: 0;
+  z-index: -22;
+}
+.wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(250px);
+  background: linear-gradient(
+    135.86deg,
+    rgb(49, 18, 0) 0.261%,
+    rgba(220, 100, 30, 0) 100%
+  );
+  opacity: 0.9;
+  bottom: -282px;
+  right: 100px;
+  overflow: hidden;
+  z-index: -22;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 :root {
-  
+  font-family: Inter, sans-serif;
+
+  --white: rgb(255, 255, 255);
+  --orange: rgb(220, 100, 30);
 }

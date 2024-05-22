@@ -1,0 +1,37 @@
+.header {
+  padding: 30px 0 50px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo h1 {
+  color: var(--white);
+  font-family: Indira;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+.header-logo span {
+  font-size: 60px;
+}
+.header-list {
+}
+.header-list_item {
+}
+
+.header-list-text {
+  color: var(--orange);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.header-list-value {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}

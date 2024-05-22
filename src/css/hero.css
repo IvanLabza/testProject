@@ -1,0 +1,27 @@
+.hero {
+  padding-bottom: 50px;
+  position: relative;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-image: url(../img/btc.png);
+  width: 165px;
+  height: 165px;
+  z-index: -1;
+  top: 150px;
+  left: 47px;
+}
+
+.hero-text {
+  color: rgb(255, 255, 255);
+  font-family: Playfair Display;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 3%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
