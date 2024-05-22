@@ -4,7 +4,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 const userName = document.querySelector('.userName');
 const userLastName = document.querySelector('.userLastName');
-const phone = document.querySelector('.user-phone');
+const phone = document.querySelector('.input-phone');
 const email = document.querySelector('.email');
 const form = document.querySelector('.form-list');
 
