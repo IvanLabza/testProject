@@ -143,6 +143,7 @@
   display: flex;
   align-items: flex-start;
   gap: 8px;
+  margin-bottom: 15px;
 }
 .check p {
   color: var(--white);
@@ -150,21 +151,53 @@
   font-weight: 400;
   line-height: 12px;
 }
-.form-register-conf {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  margin-top: 15px;
+
+.check input {
+  display: none;
 }
 
-.form-register-conf p {
+.check span {
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 2px;
+  background: rgb(255, 255, 255);
+  border: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+.check input:checked + span:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  width: 12px;
+  height: 8px;
+  background-image: url(../img/Union.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 666;
+}
+
+.form-register-conf {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  
+}
+
+
+
+.restAssuredText {
   color: var(--white);
   font-size: 6px;
-  font-weight: 400;
+  font-weight: 300;
 }
-.form-register-conf span {
+.restAssuredSpan {
+  color: var(--white);
   font-size: 10px;
   font-weight: 700;
+  line-height: 0%;
 }
 
 @media screen and (max-width: 1180px) {

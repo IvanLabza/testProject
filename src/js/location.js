@@ -10,16 +10,13 @@ const resources = {
     translation: DE,
   },
   es: {
-    translation: {
-      welcome: ES,
-    },
+    translation: ES,
   },
   pl: {
-    translation: {
-      welcome: PL,
-    },
+    translation: PL,
   },
 };
+
 
 i18n.use(initReactI18next).init({
   resources,
@@ -47,7 +44,7 @@ const signUp = i18n.t('signUp');
 
 const byRegistering = i18n.t('byRegistering');
 
-const restAssured = i18n.t('restAssuredSpan');
+const restAssuredSp = i18n.t('restAssuredSpan');
 
 const restAssuredText = i18n.t('restAssuredText');
 
@@ -78,7 +75,7 @@ const inputPhone = document.querySelector('.input-phone');
 
 const formRegisterBtn = document.querySelector('.form-register-btn');
 
-const Registering = document.querySelector('Registering');
+const Registering = document.querySelector('.Registering');
 
 const restAssuredTextCn = document.querySelector('.restAssuredText');
 
@@ -100,7 +97,7 @@ profitsToday.textContent = commonProfitsToday;
 
 currentRevenue.textContent = netCurrentRevenue;
 
-restAssuredSpan.textContent = restAssured;
+restAssuredSpan.textContent = restAssuredSp;
 
 restAssuredTextCn.textContent = restAssuredText;
 

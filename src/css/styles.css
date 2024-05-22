@@ -68,7 +68,7 @@ body {
   padding: 0 15px;
 }
 :root {
-  font-family: Inter, sans-serif;
+  font-family: Inter;
 
   --white: rgb(255, 255, 255);
   --orange: rgb(220, 100, 30);

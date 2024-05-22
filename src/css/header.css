@@ -28,6 +28,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+  margin-right: 3px;
 }
 .header-list-value {
   color: var(--white);

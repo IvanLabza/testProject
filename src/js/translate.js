@@ -9,8 +9,9 @@ export const PL = {
   signUp: 'ZAPISZ SIĘ',
   byRegistering:
     'Rejestrując się, potwierdzam, że przeczytałem i zgadzam się z warunkami korzystania z usługi i polityką prywatności opisaną na stronie internetowej.',
-  restAssured:
-    'Spokojnie, twoje dane są zawsze u nas bezpieczne. W każdej chwili możesz zaktualizować swoje preferencje, korzystając z linku do rezygnacji znajdującego się na dole każdego e-maila, który otrzymasz od nas. Traktujemy twoją prywatność poważnie i dbamy o twoje informacje z najwyższą starannością. Klikając powyższy przycisk, wyrażasz zgodę na przetwarzanie twoich informacji zgodnie z tymi warunkami.',
+  restAssuredSpan: 'Spokojnie, twoje dane są zawsze u nas bezpieczne.',
+  restAssuredText:
+    ' W każdej chwili możesz zaktualizować swoje preferencje, korzystając z linku do rezygnacji znajdującego się na dole każdego e-maila, który otrzymasz od nas. Traktujemy twoją prywatność poważnie i dbamy o twoje informacje z najwyższą starannością. Klikając powyższy przycisk, wyrażasz zgodę na przetwarzanie twoich informacji zgodnie z tymi warunkami.',
   netCurrentRevenue: 'Aktualny dochód netto:',
   commonProfitsToday: 'Wspólne zyski dzisiaj 10/05/23:',
   hurry: 'Pośpiesz się! Pozostało tylko 13 miejsc dla nowych uczestników!',
@@ -29,9 +30,11 @@ export const DE = {
   signUp: 'ANMELDEN',
   byRegistering:
     'Mit der Registrierung bestätige ich, dass ich die Nutzungsbedingungen und Datenschutzrichtlinien auf der Website gelesen und akzeptiert habe.',
-  restAssured:
-    'Seien Sie versichert, Ihre Daten sind bei uns immer sicher geschützt. Sie können Ihre Präferenzen jederzeit aktualisieren, indem Sie den Abmeldelink am Ende jeder E-Mail, die Sie von uns erhalten, verwenden. Wir nehmen Ihre Privatsphäre ernst und behandeln Ihre Informationen mit größter Sorgfalt. Durch Klicken auf die obige Schaltfläche stimmen Sie der Verarbeitung Ihrer Informationen gemäß diesen Bedingungen zu.',
+  restAssuredSpan:
+    'Seien Sie versichert, Ihre Daten sind bei uns immer sicher geschützt.',
   netCurrentRevenue: 'Nettoaktuelleinnahmen:',
+  restAssuredText:
+    'Sie können Ihre Präferenzen jederzeit aktualisieren, indem Sie den Abmeldelink am Ende jeder E-Mail, die Sie von uns erhalten, verwenden. Wir nehmen Ihre Privatsphäre ernst und behandeln Ihre Informationen mit größter Sorgfalt. Durch Klicken auf die obige Schaltfläche stimmen Sie der Verarbeitung Ihrer Informationen gemäß diesen Bedingungen zu.',
   commonProfitsToday: 'Gemeinsame Gewinne heute 10/05/23:',
   hurry: 'Beeilen Sie sich! Nur noch 13 Plätze für neue Teilnehmer verfügbar!',
   achieveYourFinancialTriumph:
@@ -49,9 +52,11 @@ export const ES = {
   signUp: 'REGÍSTRATE',
   byRegistering:
     'Al registrarme, confirmo que he leído y acepto los términos de servicio y la política de privacidad descritos en el sitio web.',
-  restAssured:
-    'Descanse tranquilo, sus datos siempre están protegidos con nosotros. Siéntase libre de actualizar sus preferencias en cualquier momento utilizando el enlace de cancelación de suscripción en la parte inferior de cualquier correo electrónico que reciba de nosotros. Tomamos su privacidad en serio y manejamos su información con el mayor cuidado. Al hacer clic en el botón de arriba, usted da su consentimiento para el procesamiento de su información de acuerdo con estos términos.',
+  restAssuredSpan:
+    'Descanse tranquilo, sus datos siempre están protegidos con nosotros.',
   netCurrentRevenue: 'Ingresos netos actuales:',
+  restAssuredText:
+    'Siéntase libre de actualizar sus preferencias en cualquier momento utilizando el enlace de cancelación de suscripción en la parte inferior de cualquier correo electrónico que reciba de nosotros. Tomamos su privacidad en serio y manejamos su información con el mayor cuidado. Al hacer clic en el botón de arriba, usted da su consentimiento para el procesamiento de su información de acuerdo con estos términos.',
   commonProfitsToday: 'Ganancias comunes hoy 10/05/23:',
   hurry: '¡Apúrate! ¡Solo quedan 13 lugares para nuevos participantes!',
   achieveYourFinancialTriumph:

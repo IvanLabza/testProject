@@ -6,6 +6,7 @@ const userName = document.querySelector('.userName');
 const userLastName = document.querySelector('.userLastName');
 const phone = document.querySelector('.input-phone');
 const email = document.querySelector('.email');
+const checkbox = document.querySelector('.checkbox');
 const form = document.querySelector('.form-list');
 
 const schema = Yup.object().shape({
@@ -23,6 +24,9 @@ const schema = Yup.object().shape({
     .matches(/^\d{7,10}$/, 'min 7 max 10 numbers')
     .required('required'),
   email: Yup.string().email('error format email').required('required'),
+  checkbox: Yup.bool()
+    .oneOf([true], 'Checkbox must be checked')
+    .required('required'),
 });
 
 let values = {
@@ -30,6 +34,7 @@ let values = {
   userLastName: userLastName.value,
   phone: phone.value,
   email: email.value,
+  checkbox: checkbox.checked,
 };
 
 const validateFnc = (field, value) => {
@@ -55,6 +60,10 @@ const validateFnc = (field, value) => {
   }
 };
 
+checkbox.addEventListener('change', e => {
+  values.checkbox = e.target.checked;
+  validateFnc('checkbox', values.checkbox);
+});
 userName.addEventListener('blur', e => {
   values.userName = e.target.value;
   validateFnc('userName', values.userName);
@@ -74,5 +83,6 @@ email.addEventListener('blur', e => {
 
 form.addEventListener('submit', e => {
   e.preventDefault();
+  schema.validateAt('checkbox', checkbox.checked);
   schema.validate(values);
 });
