@@ -83,6 +83,6 @@ email.addEventListener('blur', e => {
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  schema.validateAt('checkbox', checkbox.checked);
   schema.validate(values);
+  localStorage.setItem('person', JSON.stringify(values));
 });

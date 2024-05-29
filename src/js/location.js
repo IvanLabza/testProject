@@ -25,17 +25,7 @@ i18n.use(initReactI18next).init({
   },
 });
 
-// const select = localStorage.getItem('lang');
-
-// const sel = Array.from(document.getElementById('sel1').children);
-
-// sel.map(child, () => {
-//   if (child.value === select) {
-//     child.selected = true;
-//   } else {
-//     child.selected = false;
-//   }
-// });
+//element translate
 
 const joinNow = i18n.t('joinNow');
 
@@ -64,6 +54,9 @@ const commonProfitsToday = i18n.t('commonProfitsToday');
 const hurry = i18n.t('hurry');
 
 const achieveYourFinancialTriumph = i18n.t('achieveYourFinancialTriumph');
+
+//element
+
 const currentRevenue = document.querySelector('.currentRevenue');
 
 const formContentText = document.querySelector('.form-content-text');
